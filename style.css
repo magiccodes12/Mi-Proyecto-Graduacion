@@ -1,0 +1,52 @@
+.html::-webkit-scrollbar
+
+.img {
+    width:32px;
+    height:32px;
+}
+
+/* Estilo del menú de navegación */
+.navbar {
+    background-color: #2f4f4f;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #3cb371;
+    border-radius: 5px;
+}
+
+/* Estilo de la sección de donaciones */
+#donaciones {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#donaciones h2 {
+    margin-bottom: 15px;
+}
+
+#donaciones form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#donaciones input, #donaciones button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}

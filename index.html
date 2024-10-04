@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Medio-ambiente</title>
+    <link rel="icon" type="image/png" href="../static/img/Favicon.png"/>
+</head>
+<body>
+    <!--Menu de navegacion-->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#donaciones">Donaciones</a></li>
+        </ul>
+    </nav>
+
+<!--Seccion de Donaciones-->
+<section id="donaciones">
+    <h2>Donaciones para Plantar Árboles</h2>
+    <p>Con tu apoyo, podemos plantar más árboles y contribuir al medio ambiente.</p>
+    <form action="/donar" method="POST">
+        <label for="cantidad">Cantidad a donar:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+        <button type="submit">Donar</button>
+    </form>
+</section>
+</body>
+</html>

@@ -1,11 +1,49 @@
-.html::-webkit-scrollbar
-
-.img {
-    width:32px;
-    height:32px;
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo del menú de navegación */
+.header {
+    background-image: url("../img/6.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #CCE59D;
+    padding: 15vh 30px 5vh 30px; /* Ajusta el padding para reducir el espacio */
+    margin-bottom: 0px; /* Reduce el espacio debajo del header */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 5px solid #000;
+}
+
+.header-image {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio entre la imagen y la sección intro */
+}
+
+.header-image img {
+    width: 300px; /* Aumenta el tamaño de la imagen */
+    height: auto; /* Mantén la proporción original */
+    border-radius: 20%; /* Conserva las esquinas redondeadas */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
+    margin: 0 40px; /* Ajusta el margen si es necesario */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    text-align: right;
+    position: relative; /* Permite ajustar la posición */
+    top: 25px; /* Ajusta el desplazamiento hacia abajo */
+}
+
+/* Menú de navegación */
 .navbar {
     background-color: #2f4f4f;
     padding: 10px;
@@ -29,24 +67,109 @@
     border-radius: 5px;
 }
 
-/* Estilo de la sección de donaciones */
-#donaciones {
+/* Estilo del main (dividido en filas y columnas) */
+main {
+    background: linear-gradient(to bottom, #006400, rgb(50, 132, 122));
     padding: 20px;
-    background-color: #f5f5f5;
-    text-align: center;
+    min-height: calc(100vh - 140px);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto auto;  /* Dos filas automáticas */
+    grid-gap: 20px;              /* Espacio entre las celdas */
+
 }
 
-#donaciones h2 {
-    margin-bottom: 15px;
+.left, .right {
+    flex: 1;                    /* Asegura que ambas secciones ocupen espacio equitativamente */
+    min-width: 200px;           /* Evita que las secciones se compriman demasiado */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+.left {
+    grid-column: 1;  /* Primera columna */
+}
+
+.right {
+    grid-column: 2;  /* Segunda columna */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo del contenedor de la sección de donaciones */
+#donaciones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #CCE59D;
+    flex-wrap: wrap;
+}
+
+#donaciones h2,
+#donaciones p,
+#donaciones form {
+    margin-top: 10px;
+    text-align: right;
 }
 
 #donaciones form {
-    display: inline-block;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#donaciones input, #donaciones button {
+#donaciones input,
+#donaciones button {
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0;
     font-size: 16px;
+}
+
+.donar {
+    width: 97.48%; /* Se ajusta al ancho completo del contenedor */
+    padding: 20px; /* Ajusta el espacio interior según necesites */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.donacion-image {
+    margin-bottom: 20px; /* Espacio entre la imagen y la sección intro */
+}
+
+.donacion-image img {
+    width: 300px; /* Aumenta el tamaño de la imagen */
+    height: auto; /* Mantén la proporción original */
+    border-radius: 20%; /* Conserva las esquinas redondeadas */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Varias columnas que se adaptan al ancho */
+    grid-gap: 20px;  /* Espacio entre las celdas */
+    padding: 20px;
+}
+
+.image-container {
+    width: 100%;  /* Ajusta el ancho de cada contenedor */
+}
+
+.image-container img {
+    width: 100%;
+    height: 65%;
+    border: 1px solid #ddd;
+    border-radius: 8px;  /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para las imágenes */
 }

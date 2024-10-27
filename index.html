@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,49 @@
     <link rel="icon" type="image/png" href="../static/img/Favicon.png"/>
 </head>
 <body>
-    <!--Menu de navegacion-->
+    <!-- Menú de navegación -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#donaciones">Donaciones</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="aboutus.html">NOSOTROS</a></li>
+            <li><a href="projects.html">PROYECTOS</a></li>
+            <li><a href="donations.html">DONACIONES</a></li>
         </ul>
     </nav>
 
-<!--Seccion de Donaciones-->
-<section id="donaciones">
-    <h2>Donaciones para Plantar Árboles</h2>
-    <p>Con tu apoyo, podemos plantar más árboles y contribuir al medio ambiente.</p>
-    <form action="/donar" method="POST">
-        <label for="cantidad">Cantidad a donar:</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" required>
-        <button type="submit">Donar</button>
-    </form>
-</section>
+    <!-- Sección principal con filas -->
+    <header class="header">
+        <div class="header-image">
+            <img src="../static/img/5.jpg" alt="Imagen encima de intro">
+            <img src="../static/img/7.jpg" alt="Imagen encima de intro">
+            <img src="../static/img/8.jpg" alt="Imagen encima de intro">
+        </div>        
+        <div class="intro">
+            <h3>La contaminación a nivel mundial está y seguirá aumentando con el pasar de los años. Los países con más contaminación ambiental</h3>
+            <h3>son: India, Bangladesh, Pakistán y Tayikistán.</h3>
+        </div>
+    </header>
+    <main>
+        <section class="left">
+            <h3>Columna Izquierda</h3>
+            <p>Información sobre los efectos en el medio ambiente.</p>
+        </section>
+        <section class="right">
+            <h3>Columna Derecha</h3>
+            <p>Acciones que podemos tomar para reducir la contaminación.</p>
+        </section>
+        <!-- Galería de imágenes -->
+        <section class="image-gallery">
+            {% for image in images %}
+                <div class="image-container">
+                    <img src="{{ image }}" alt="Imagen del catálogo">
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>Hecho por: Adrián Torres</p>
+    </footer>
 </body>
 </html>

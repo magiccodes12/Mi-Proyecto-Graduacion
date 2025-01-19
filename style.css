@@ -5,13 +5,22 @@ body {
     padding: 0;
 }
 
+.vinetas li {
+    list-style: square; /* Asegúrate de usar "disc", "circle" o "square" */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espacio entre elementos */
+    padding-left: 20px; /* Opcional: Asegura que las viñetas estén correctamente alineadas */
+    
+}
+
+
 .header {
     background-image: url("../img/6.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: left;
     background-color: #CCE59D;
-    padding: 15vh 30px 5vh 30px; /* Ajusta el padding para reducir el espacio */
+    padding: 10vh 30px 5vh 10px; /* Ajusta el padding para reducir el espacio */
     margin-bottom: 0px; /* Reduce el espacio debajo del header */
     display: flex;
     flex-direction: column;
@@ -21,13 +30,70 @@ body {
 
 .header-image {
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
+    justify-content: right; /* Centra la imagen horizontalmente */
     margin-bottom: 20px; /* Espacio entre la imagen y la sección intro */
 }
 
 .header-image img {
-    width: 300px; /* Aumenta el tamaño de la imagen */
-    height: auto; /* Mantén la proporción original */
+    width: 260px; /* Aumenta el tamaño de la imagen */
+    height: 200px; /* Mantén la proporción original */
+    border-radius: 20%; /* Conserva las esquinas redondeadas */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
+    margin: 0 40px; /* Ajusta el margen si es necesario */
+}
+
+.header2 {
+    background-image: url("../img/9.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    background-color: #CCE59D;
+    padding: 10vh 30px 5vh 10px; /* Ajusta el padding para reducir el espacio */
+    margin-bottom: 0px; /* Reduce el espacio debajo del header */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 5px solid #000;
+}
+
+.header-image2 {
+    display: flex;
+    justify-content: right; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio entre la imagen y la sección intro */
+}
+
+.header-image2 img {
+    width: 260px; /* Aumenta el tamaño de la imagen */
+    height: 200px; /* Mantén la proporción original */
+    border-radius: 20%; /* Conserva las esquinas redondeadas */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
+    margin: 0 40px; /* Ajusta el margen si es necesario */
+}
+
+.header3 {
+    background-image: url("../img/16.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    background-color: #CCE59D;
+    padding: 10vh 30px 5vh 10px; /* Ajusta el padding para reducir el espacio */
+    margin-bottom: 0px; /* Reduce el espacio debajo del header */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 5px solid #000;
+
+}
+
+.header-image3 {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio entre la imagen y la sección intro */
+}
+
+.header-image3 img {
+    width: 260px; /* Aumenta el tamaño de la imagen */
+    height: 200px; /* Mantén la proporción original */
     border-radius: 20%; /* Conserva las esquinas redondeadas */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
     margin: 0 40px; /* Ajusta el margen si es necesario */
@@ -69,7 +135,7 @@ body {
 
 /* Estilo del main (dividido en filas y columnas) */
 main {
-    background: linear-gradient(to bottom, #006400, rgb(50, 132, 122));
+    background: linear-gradient(to bottom, #567156, rgb(75, 132, 129));
     padding: 20px;
     min-height: calc(100vh - 140px);
     display: grid;
@@ -95,6 +161,86 @@ main {
     grid-column: 2;  /* Segunda columna */
 }
 
+.recursos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las celdas */
+    padding: 20px;
+    background: linear-gradient(to bottom, #567156, rgb(75, 132, 129));
+    min-height: calc(100vh - 140px);   
+}
+
+.zigzag-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 20px; 
+}
+
+.zigzag-item:nth-child(even) {
+    grid-template-columns: 1fr 3fr
+}
+
+.left2, .right2 {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+/* Estilo específico para las imágenes en la columna derecha */
+.right2 img, .left2 img {
+    width: 100%;
+    height: 275px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+}
+
+@media (max-width: 768px) {
+    .recursos {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+}
+
+.regla {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las celdas */
+    padding: 20px;
+    background: linear-gradient(to bottom, #567156, rgb(75, 132, 129));
+    min-height: calc(100vh - 140px);   
+}
+
+.zigzag-item2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 20px; 
+}
+
+.zigzag-item2:nth-child(odd) {
+    grid-template-columns: 1fr 3fr
+}
+
+.left3, .right3 {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+/* Estilo específico para las imágenes en la columna derecha */
+.left3 img, .right3 img {
+    width: 100%;
+    height: 230px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+}
+
+@media (max-width: 768px) {
+    .regla {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+}
+
 /* Estilo del pie de página */
 footer {
     background-color: #2f4f4f;
@@ -103,73 +249,191 @@ footer {
     padding: 15px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 98%;
+    position: static;
 }
 
-/* Estilo del contenedor de la sección de donaciones */
-#donaciones {
+/* Contenedor principal */
+.donar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Separar imagen y texto */
     padding: 20px;
     background-color: #CCE59D;
+    border: 5px solid #000;
+    border-radius: 0;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    gap: 10px; /* Espacio entre elementos flexibles */
     flex-wrap: wrap;
-}
-
-#donaciones h2,
-#donaciones p,
-#donaciones form {
-    margin-top: 10px;
-    text-align: right;
-}
-
-#donaciones form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#donaciones input,
-#donaciones button {
-    padding: 10px;
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-.donar {
-    width: 97.48%; /* Se ajusta al ancho completo del contenedor */
-    padding: 20px; /* Ajusta el espacio interior según necesites */
-    border: 2px solid #000;
-    display: flex;
-    justify-content: flex-end;
+    width: 96.7%;
+    margin: 0 auto;
 }
 
 .donacion-image {
+    display: flex;
+    justify-content: right; /* Centra la imagen horizontalmente */
     margin-bottom: 20px; /* Espacio entre la imagen y la sección intro */
+    gap: 20px;
 }
 
 .donacion-image img {
-    width: 300px; /* Aumenta el tamaño de la imagen */
-    height: auto; /* Mantén la proporción original */
+    width: 270px; /* Aumenta el tamaño de la imagen */
+    height: 200px; /* Mantén la proporción original */
     border-radius: 20%; /* Conserva las esquinas redondeadas */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
 }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Varias columnas que se adaptan al ancho */
-    grid-gap: 20px;  /* Espacio entre las celdas */
-    padding: 20px;
+/* Contenido */
+.donacion-contenido {
+    flex: 1;
+    text-align: left;
+    color: #0b0b0b;
+    min-width: 300px;
 }
 
-.image-container {
-    width: 100%;  /* Ajusta el ancho de cada contenedor */
+.donacion-contenido h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.image-container img {
+.donacion-contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Estilo del contenedor de la sección de donaciones */
+.donar form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#cantidad {
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.donar-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3 ease;
+}
+
+.donar-btn:hover {
+    background-color: #45a049;
+}
+
+/* Contenedor principal */
+.arbol {
+    background: linear-gradient(to bottom, #567156, rgb(75, 132, 129));
+    padding: 20px 0;
+    min-height: calc(100vh - 140px);
+    display: flex; /* Usamos exclusivamente grid */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor del título */
+.center {
+    text-align: center; /* Centra texto */
+    padding: 20px; /* Espaciado superior e inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1200px;
+}
+
+/* Estilo del título */
+.center h1 {
+    font-size: 3rem;
+    color: #97c92b;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #f6f2f2, rgba(255, 255, 255, 0)); /* Degradado */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hace que el texto tome el degradado */
+}
+
+/* Contenedor de la imagen */
+.tree {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   position: relative;
+   margin: 0;
+   padding: 0;
+}
+
+/* Imagen */
+.tree img {
+    max-width: 70%;
+    height: auto; /* Mantiene proporción */
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 50px 10px rgba(0, 0, 0, 0.5);
+    border: 3px dashed black;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#slider-image {
     width: 100%;
-    height: 65%;
-    border: 1px solid #ddd;
-    border-radius: 8px;  /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para las imágenes */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.caption {
+    padding: 10px;
+    font-size: 1em;
+    color: #555;
+    font-weight: bold;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #ddd;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+

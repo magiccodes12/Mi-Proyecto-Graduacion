@@ -12,9 +12,9 @@
     <!-- Menú de navegación -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="aboutus.html">NOSOTROS</a></li>
-            <li><a href="projects.html">PROYECTOS</a></li>
+            <li><a href="index.html">CAMBIO CLIMATICO</a></li>
+            <li><a href="recursos.html">RECURSOS RENOVABLES</a></li>
+            <li><a href="3r.html">REGLA DE LAS 3R</a></li>
             <li><a href="donations.html">DONACIONES</a></li>
         </ul>
     </nav>
@@ -27,27 +27,50 @@
             <img src="../static/img/8.jpg" alt="Imagen encima de intro">
         </div>        
         <div class="intro">
-            <h3>La contaminación a nivel mundial está y seguirá aumentando con el pasar de los años. Los países con más contaminación ambiental</h3>
-            <h3>son: India, Bangladesh, Pakistán y Tayikistán.</h3>
+            <h3>La contaminación a nivel mundial seguirá aumentando al pasar de los años, lo cual empeorará cambio climático.</h3>
+            <h3>Los países con más contaminación ambiental son: India, Bangladesh, Pakistán y Tayikistán.</h3>
         </div>
     </header>
     <main>
         <section class="left">
-            <h3>Columna Izquierda</h3>
-            <p>Información sobre los efectos en el medio ambiente.</p>
+            <h3>Clases de contaminación y sus efectos:</h3>
+                <ul class="vinetas">
+                    <li>Gases de Efecto Invernadero: Actividades humanas, como la quema de combustibles fósiles, liberan gases como el CO₂ y el metano, que atrapan el calor en la atmósfera y elevan la temperatura global.</li>
+
+                    <li>Contaminación del Aire y Océanos: Las emisiones de CO₂ también se disuelven en los océanos, haciéndolos más ácidos y afectando la vida marina.</li>
+                
+                    <li>Deforestación y Agricultura: Al talar árboles y expandir la agricultura, se liberan gases que aumentan el calentamiento global.</li>
+                
+                    <li>Salud Humana: La contaminación del aire provoca enfermedades respiratorias, y aumento de la temperatura facilita la propagación de enfermedades tropicales.</li>
+                
+                    <li>Fenómenos Climáticos Extremos: El cambio climático aumenta la frecuencia y gravedad de eventos como huracanes, sequías e incendios forestales.</li>
+                </ul>
         </section>
         <section class="right">
-            <h3>Columna Derecha</h3>
-            <p>Acciones que podemos tomar para reducir la contaminación.</p>
+            <h3>Acciones que podemos tomar para reducir la contaminación</h3>
+                <ul class="vinetas">
+                    <li>Evitar el uso de plásticos de un solo uso: Debemos optar por productos reutilizables; así disminuimos la cantidad de residuos que terminan en vertederos o contaminan los océanos.</li>
+
+                    <li>Reciclar y separar residuos correctamente: Al clasificar papel, vidrio, metales y plásticos, evitamos que se acumulen en la basura y se les da una segunda vida útil.</li>
+
+                    <li>Usar energía renovable: Cambiar a fuentes de energía limpia, como solar, eólica o hidroeléctrica, reduce las emisiones de gases de efecto invernadero.</li>
+
+                    <li>Evitar el desperdicio de alimentos: Planificar las compras y conservar los alimentos correctamente disminuye el desperdicio, que genera metano en los vertederos.</li>
+
+                    <li>Educación y concientización: Aprender más sobre el cambio climático y cómo afecta al mundo para compartir información y crear conciencia en la comunidad.</li>
+                </ul>
         </section>
-        <!-- Galería de imágenes -->
-        <section class="image-gallery">
-            {% for image in images %}
-                <div class="image-container">
-                    <img src="{{ image }}" alt="Imagen del catálogo">
-                </div>
-            {% endfor %}
+        <!-- Galería de imágenes 1 
+        <section class="slider-container">
+             Contenedor para una sola imagen y descripción
+            <img id="slider-image" src="img/17reciclejohoy.jpg" alt="Imagen del catálogo" width="500" height="500">
+            <div class="caption" id="caption">Descripción de la imagen 1</div>
+    
+             Botones para cambiar de imagen
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
         </section>
+        <script src="script.js"></script>-->
     </main>
     <!-- Pie de página -->
     <footer>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Medio-ambiente</title>
+    <link rel="icon" type="image/png" href="../static/img/Favicon.png"/>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">CAMBIO CLIMATICO</a></li>
+            <li><a href="recursos.html">RECURSOS RENOVABLES</a></li>
+            <li><a href="3r.html">REGLA DE LAS 3R</a></li>
+            <li><a href="donations.html">DONACIONES</a></li>
+        </ul>
+    </nav>
+
+<!--Seccion de Donaciones-->
+<header class="donar">
+    <div class="donacion-contenido">
+        <h2>Donaciones para Plantar Árboles</h2>
+        <p>Con tu apoyo, podemos plantar más árboles y contribuir al medio ambiente.</p>
+        <form action="/donar" method="POST">
+            <label for="cantidad">Cantidad a donar (USD):</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+            <button type="submit">Donar</button>
+        </form>
+    </div>
+    <div class="donacion-image">
+        <img src="../static/img/4.jpg" alt="Imagen de bosque">
+        <img src="../static/img/23.jpg" alt="Imagen de persona plantando">
+        <img src="../static/img/24.jpg" alt="Imagen de persona con arbol">
+    </div>
+</header>
+<main class="arbol">
+    <section class="center">
+        <h1>SE PARTE DE LA COMUNIDAD Y ADOPTA UN ÁRBOL.</h1>
+        <div class="tree">
+            <img src="../static/img/25.jpg" alt="Imagen de persona abrazando un arbol">
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Hecho por: Adrián Torres</p>
+</footer>
+</body>
+</html>
